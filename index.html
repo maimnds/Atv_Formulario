@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+    <head>
+        <title> Atividade 3 - Formulário </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body background="img/fundo.jpg">
+
+        <h2 align="center" > <font size="15" color="purple" face="alef"> -Mai Anime List- </font></h2>
+
+        <table width="400" border="5" bordercolor="purple" width="" align="center" bgcolor="lavender">
+            <tr> <td>
+
+        <fieldset>
+            <legend align="center"> <font size="6" color="purple" face="alef"> Cadastro de usuário </font> </legend>
+
+            <form action="enviar.php" method="get" name="cadastro">
+                <table border="0">
+                    <tr>
+                        <td><label> <b> Nome: </b></label>
+                         <input type="text" id="name" size="49" maxlength="50" placeholder="Digite seu nome" required></td>
+                    </tr>
+                    
+                    <tr>
+                        <td> <label> <b>E-mail:</b> </label>
+                        <input type="email" id="mail" name="mail" size="49" placeholder="Digite seu e-mail" required/> </td>
+                    </tr>
+                    <tr>
+                        <td><label><b> Senha:</b> </label>
+                        <input type="password" id="senha" name="senha" size="49" placeholder="Digite sua senha" required> </td>
+                    </tr>
+                    <tr>
+
+                        <td><label for="sexo"><b>Sexo:</b></label>
+
+                        <select name="sexo" id="sexo">
+                        <option value="S">Selecione</option>
+                        <option value="F">Feminino</option>
+                        <option value="M">Masculino</option>
+                        <option value="O">Outro</option>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                        <td><label><b> Gêneros Preferidos: </b></label></td>
+                        <br/>
+                    </tr>
+                    <tr>
+                        <td>
+                        <label> <input type="checkbox" id="shonen" value="shonen"> 
+                            Shonen </label>
+                        <br/>
+                        <label><input type="checkbox" id="shoujo" value="shoujo">
+                            Shoujo </label>
+                        <br/>
+                        <label><input type="checkbox" id="seinen" value="seinen">
+                            Seinen </label>
+                        <br/>
+                        <label><input type="checkbox" id="isekai" value="isekai">
+                            Isekai </label>
+                        <br/>
+                        <label><input type="checkbox" id="sol" value="sol">
+                            Slice of Life </label>
+                        <br/>
+                        <label><input type="checkbox" id="mecha" value="mecha">
+                            Mecha </label>
+                        </td>
+                    </tr>
+                    
+                    <th colspan="2">
+                        <input type="submit" id="enviar" name="enviar" value="SALVAR" onclick="alert('Cadastro realizazdo!!')"/>
+                    </th>
+                    <tr>
+                        <td><input type="text" id="lname" name="lname" size="49" value="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  " disabled></td>  
+                    </tr>
+
+                </table>
+            </form>
+
+            <fieldset>
+                <legend align="center"> <font size="6" color="purple" face="alef"> Atualizar Lista </font> </legend>
+                    <table border="0" align="center">
+                        <br/>
+                
+                        <label><b> Buscar Anime:</b> </label>
+                        <input type="search" name="buscar" id="buscar" size="32"/>
+                       
+                        <br/> <br/>
+
+                        <label for="anime"><b>Anime: </b></label> <!--"Mostra anime pesquisado"-->
+                        <input type="text" id="lname" name="lname" size="39" value="Attack On Titan" disabled>
+                        
+                        <br><br>
+
+                        
+                        <label><b> Avaliar:</b></label>
+
+                        <br/>
+                        <input type="radio" id="um" name="estrela" value="um" required>
+                        <label> ★ </label>
+                        <input type="radio" id="dois" name="estrela" value="dois" required>
+                        <label> ★★ </label>
+                        <input type="radio" id="tres" name="estrela" value="tres" required>
+                        <label> ★★★ </label>
+                        <input type="radio" id="quatro" name="estrela" value="quatro" required>
+                        <label> ★★★★ </label> 
+                        <input type="radio" id="cinco" name="estrela" value="cinco" required>
+                        <label> ★★★★★ </label>
+                        
+                        <br/><br/>
+                        
+                        <label><b> Comentário: </b></label>
+                        <br/>
+                        <textarea id="coment" name="coment" cols="47" rows="10" maxlength="240"
+                        placeholder="Dê sua opinião (Máximo 240 caracteres)"></textarea> 
+                       
+                        <br/>
+
+                        
+                        <th>
+                        <input type="submit" id="enviar" name="enviar" value="SALVAR" onclick="alert('Lista de Animes atualizada!!!')"/>
+                        <input type="reset" id="limpar" name="limpar" value="LIMPAR"/>
+                        </th>
+
+                        <input type="text" id="lname" name="lname" size="47" value="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  " disabled>  
+
+                    </table>
+                
+            </fieldset>
+
+            </fieldset>
+
+            
+
+
+            </td></tr>
+        </table>
+  
+    </body>
+
+
+
+
+
+
+
+
+
+</html>
